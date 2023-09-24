@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classwork</title>
+  </head>
+  <body>
+
+   
+    <script>
+        //  question1 mutiply the even number in the array
+      let numb = [7, 13, 15, 21, 30, 4, 95];
+      let numbNew = digit(numb)
+      document.write(` <br>question no 1<br>`)
+      document.write(` doubling even number in an array, initial array  =>[7, 13, 15, 21, 30, 4, 95]  to  ${numbNew} <br> `);
+      
+      function digit(number) {
+        
+      for (let i = 0; i < number.length; i++) {
+        let num = number[i];
+        if (num % 2 == 0) {
+          num = num * 2;
+        }
+        number[i] = num;
+       
+      }
+      return number;
+      
+      }
+      // question 2
+       //  added numbers in an array question 5
+       const testArray1 = [1, 2, 3, 4, 5];
+    
+        let sum= 0;
+        let totalSum = added(testArray1);
+    document.write(` <br> question no 2 <br>`);
+        document.write(`<br> the sum of testArray1 = [1, 2, 3, 4, 5]; is = ${totalSum} <br>`);
+       
+        function added(number){
+            for (let i = 0; i < number.length; i++) {
+                const element = number[i];
+                sum = sum + testArray1[i];
+               
+
+                
+            }
+            return sum;
+           
+        }
+
+      const testArray4 = ["apple", "banana", "cherry", "date"];
+      const testArray5 = ["one", "two", "three", "four", "five"];
+      const testArray6 = []; 
+      let arrayStringNew = letter(testArray4);
+      let arrayStringNew1 = letter(testArray5)
+      let arrayStringNew3 = letter(testArray6);
+      document.write(`<br> question no 3 <br>`)
+      document.write(` <br>converting   ["apple", "banana", "cherry", "date"] to ${arrayStringNew}<br>`);
+      document.write(` converting  ["one", "two", "three", "four", "five"]  to ${arrayStringNew1}<br>`);
+      document.write(` converting    to[ ${arrayStringNew3}]<br><br>`);
+
+
+      function letter(apha){
+        for (let i = 0; i < apha.length; i++) {
+            const element = apha[i].length;
+            apha[i]= element;
+            
+            
+            
+        }
+        return apha;
+      }
+
+
+
+  
+
+
+      
+    
+       
+        // number 4
+        let floatingDigit = [10.5, 20.2, 5.7, 30.1]; 
+            let numberfloat = display(floatingDigit);
+            document.write(`question no 4 <br> the smallest index in  [10.5, 20.2, 5.7, 30.1]<br> `)
+            document.write(` ${numberfloat} <br>`);
+
+            function display(float) {
+                floatingDigit.sort();
+                let result = floatingDigit[0];
+                return result;
+            }
+            
+        // number 5
+        array = [1, 2, 3, 4, 5];
+        array2 = [1, 2, 3, 4, 5];
+        let testarray = sameValue(array, array2);
+        document.write(` <br>question no 5 <br> is ${array} equals to ${array2} <br>` )
+        document.write(testarray);
+
+        function sameValue (array1, array2) {
+            let sameNumberValue1 = array1.length;
+            let sameNumberValue2 = array2.length;
+            if(sameNumberValue1.length != sameNumberValue2.length){
+        
+        return false;
+      }
+      else{
+          return true;
+      }
+           
+           }
+       
+    
+      
+      
+    </script>
+  </body>
+</html>
